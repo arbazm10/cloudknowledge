@@ -8,5 +8,5 @@ RUN yum install -y httpd \
  RUN unzip rhino.zip
  RUN cp -rvf rhino-html/* .
  RUN rm -rf rhino rhino.zip
- CMD ["/usr/bin/httpd", "-D",   "FOREGROUND"
+ CMD ["/usr/bin/httpd", "-D",   "FOREGROUND"]
  EXPOSE 80
